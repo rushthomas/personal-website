@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name</title>
+    <title>Daniel Gross</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /* CSS styles */
@@ -14,19 +14,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            min-height: 100vh;
+            overflow: auto;
         }
         .content {
-            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            text-align: left;
+            line-height: 1.6;
         }
         h1 {
-            font-size: 3em;
-            margin: 0;
+            font-size: 2em;
+            margin: 0 0 20px;
         }
         p {
-            margin: 20px 0 0;
-            font-size: 1.2em;
+            margin: 0 0 20px;
+            font-size: 1em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
+        ul li {
+            margin: 0 0 10px;
         }
         a {
             color: #fff;
@@ -37,12 +48,25 @@
             color: #ccc;
             border-bottom: 1px solid #ccc;
         }
+        @media (max-width: 600px) {
+            .content {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>Your Name</h1>
-        <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <h1>Daniel Gross</h1>
+        <p>Cofounder of Propeller New Orleans, a business incubator focused on supporting entrepreneurs as they tackle social and environmental disparities.</p>
+        <p>Partner and Head of Cryptoeconomics at Consensys Mesh 2017-present.</p>
+        <p>Investor in startups. Some examples:</p>
+        <ul>
+            <li>Example 1</li>
+        
+        </ul>
+        <p>Previously, I worked in economic development in post-Katrina New Orleans</p>
+
     </div>
 </body>
 </html>
