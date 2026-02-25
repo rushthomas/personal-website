@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--
+    ════════════════════════════════════════════
+    HOW TO ADD A NEW BLOG POST
+    ════════════════════════════════════════════
+
+    1. Copy this file and rename it:
+          blog/YYYY-MM-DD-your-post-title.html
+       Example:
+          blog/2026-03-10-thoughts-on-ai.html
+
+    2. Fill in the three placeholders below:
+         [POST TITLE]   — the title of your post
+         [YYYY-MM-DD]   — the date (e.g. 2026-03-10)
+         [CONTENT]      — your post body (plain text or HTML)
+
+    3. Add a line to blog/index.html in the <ul> section:
+         <li>
+           <span class="post-date">YYYY-MM-DD</span>
+           <a href="/blog/YYYY-MM-DD-your-post-title.html">Your Post Title</a>
+         </li>
+
+    That's it — no build step, no framework.
+    ════════════════════════════════════════════
+    -->
+    <title>[POST TITLE] — Thomas Rush</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: monospace;
+            background-color: #FFFFFF;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            overflow: auto;
+        }
+
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            padding-top: 10vh;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0 0 20px;
+        }
+
+        h2 {
+            margin: 0 0 8px;
+        }
+
+        p {
+            margin: 0 0 20px;
+            font-size: 1em;
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .back {
+            display: block;
+            margin: 0 0 32px;
+        }
+
+        .post-meta {
+            color: #666;
+            margin: 0 0 32px;
+            font-size: 0.9em;
+        }
+
+        .post-body p {
+            margin: 0 0 20px;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Thomas Rush</h1>
+        <a class="back" href="/blog/">← blog</a>
+
+        <h2>[POST TITLE]</h2>
+        <div class="post-meta">[YYYY-MM-DD]</div>
+
+        <div class="post-body">
+            <p>
+                [CONTENT]
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog — Thomas Rush</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: monospace;
+            background-color: #FFFFFF;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            overflow: auto;
+        }
+
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            padding-top: 10vh;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0 0 20px;
+        }
+
+        h2 {
+            margin: 0 0 16px;
+        }
+
+        p {
+            margin: 0 0 20px;
+            font-size: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
+
+        ul li {
+            margin: 0 0 10px;
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .back {
+            display: block;
+            margin: 0 0 32px;
+        }
+
+        .post-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .post-list li {
+            margin: 0 0 14px;
+        }
+
+        .post-date {
+            color: #666;
+            margin-right: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Thomas Rush</h1>
+        <a class="back" href="/">← back</a>
+
+        <h2>Blog</h2>
+
+        <!-- ADD NEW POSTS HERE — copy the <li> line below and fill in the href, date, and title -->
+        <ul class="post-list">
+            <li>
+                <span class="post-date">2026-02-25</span>
+                <a href="/blog/2026-02-25-hello-world.html">Hello, World</a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
