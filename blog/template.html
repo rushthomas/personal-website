@@ -12,10 +12,11 @@
        Example:
           blog/2026-03-10-thoughts-on-ai.html
 
-    2. Fill in the three placeholders below:
-         [POST TITLE]   — the title of your post
-         [YYYY-MM-DD]   — the date (e.g. 2026-03-10)
-         [CONTENT]      — your post body (plain text or HTML)
+    2. Fill in the four placeholders below:
+         [POST TITLE]      — the title of your post
+         [CANONICAL URL]   — the full URL, e.g. https://thomasrush.xyz/blog/2026-03-10-your-post-title.html
+         [YYYY-MM-DD]      — the date (e.g. 2026-03-10)
+         [CONTENT]         — your post body (plain text or HTML)
 
     3. Add a line to blog/index.html in the <ul> section:
          <li>
@@ -27,6 +28,7 @@
     ════════════════════════════════════════════
     -->
     <title>[POST TITLE] — Thomas Rush</title>
+    <link rel="canonical" href="[CANONICAL URL]">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
